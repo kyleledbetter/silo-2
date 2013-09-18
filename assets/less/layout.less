@@ -1,0 +1,243 @@
+//
+// Layout
+// --------------------------------------------------
+body {
+	padding: 50px 16px 16px 10px;
+}
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+body > .row, body > .row > [class^="col-"]{
+	position: relative;
+	height: 100%;
+}
+body > .row {
+	white-space: nowrap;
+}
+body > .row > [class^="col-"] {
+	display: inline-block;
+	float: none;
+	white-space: normal;
+}
+.no-touch {
+
+	.panel {
+		min-height: 100%;
+		position: relative;
+
+		&> .panel-heading {
+
+		}
+
+		&> .panel-body,
+		&> .list-group {
+			overflow-x: hidden;
+			overflow-y: auto;
+			-webkit-overflow-scrolling: touch;
+			position: absolute;
+			top: 58px;
+			bottom: 0;
+			z-index: 1;
+
+			&> .list-group-item:last-of-type {
+				margin-bottom: 75px;
+			}
+		}
+
+		&> textarea {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 2;
+		}
+		.hasDatepicker {
+			position: absolute;
+			bottom: 100px;
+			z-index: 3;
+		}
+	}
+}
+/* Header */
+.header {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	right: 12px;
+	text-align: center;
+	z-index: 3;
+
+	.img-circle {
+		margin-top: -4px;
+	}
+	.dropdown {
+		display: inline-block;
+	}
+	.dropdown-menu {
+		width: 100%;
+	}
+	.btn-danger {
+		margin-right: 10px;
+	}
+}
+/* Sidebar Toggle */
+.fixed-sidebar-toggle {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+/* Sidebar */
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 30%;
+	bottom: 0;
+	.transition (all .2s linear);
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+
+	.nav-heading {
+		text-transform: uppercase;
+		padding: 5px 16px 0 24px;
+	}
+
+	& > ul > li > a > img {
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+
+	.navbar {
+		margin-bottom: 10px;
+
+		.navbar-brand {
+			margin-left: 24px;
+			margin-top: 5px;
+		}
+	}
+
+	/* Slide */
+	&.active {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		z-index: 3;
+	}
+}
+/* Aside Toggle */
+.fixed-aside-toggle {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+}
+/* Sidebar */
+.aside {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 30%;
+	bottom: 0;
+	.transition (all .2s linear);
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+
+	.nav-heading {
+	  text-transform: uppercase;
+	  padding: 5px 16px 0 24px;
+	}
+
+	& > ul > li > a > img {
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+
+	.navbar {
+		margin-bottom: 10px;
+
+		.navbar-brand {
+			margin-left: 24px;
+			margin-top: 5px;
+		}
+	}
+
+	/* Slide */
+	&.active {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		z-index: 3;
+	}
+	.aside-form {
+		width: 83%;
+		padding: 10px 5px 0 0;
+
+		.form-control {
+			border-radius: 20px;
+			padding: 4px 20px;
+			min-height: 0;
+			height: auto;
+			width: 100%;
+		}
+	}
+	.tags {
+		margin: 10px 0 0 20px;
+	}
+}
+/* Tasks */
+.list-tasks {
+	margin-top: 5px;
+	li {
+		margin-bottom: 5px;
+		.clearfix;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+/* iCheck */
+.media {
+	[class*="icheckbox"] {
+		float: left;
+		margin-right: 5px;
+	}
+	.btn-details {
+		margin-top: -5px;
+	}
+}
+/* Media */
+.media-text {
+	margin-top: 5px;
+}
+/* Event */
+.media-event {
+	margin-right: 5px;
+	padding: 2px 4px;
+}
+
+@media (max-width: @screen-tablet) {
+	body {
+		padding-bottom: 0;
+	}
+	body > .row > [class^="col-"] {
+		width: 100%;
+		padding: 0;
+	}
+	body > .row {
+		margin-left: -7.5px;
+		margin-right: -12.5px;
+	}
+	.user-name {
+		display: none;
+	}
+	.aside,
+	.sidebar {
+		width: 65%;
+	}
+	.magic-box {
+		max-height: 30px;
+	}
+	.panel-heading {
+		padding: 4px;
+	}
+}

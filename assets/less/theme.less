@@ -1,0 +1,145 @@
+//
+// Theme
+// --------------------------------------------------
+
+/* Text */
+.text-muted {
+  &:hover {
+    text-decoration: none;
+  }
+}
+.text-success-light {
+  color: @brand-success-light;
+}
+.text-success-dark {
+  color: @brand-success-dark;
+}
+.text-info-light {
+  color: @brand-info-light;
+}
+.text-info-dark {
+  color: @brand-info-dark;
+}
+.text-primary {
+  color: @brand-primary;
+}
+.text-primary-light {
+  color: @brand-primary-light;
+}
+.text-primary-dark {
+  color: @brand-primary-dark;
+}
+.text-warning-light {
+  color: @brand-warning-light;
+}
+.text-warning-dark {
+  color: @brand-warning-dark;
+}
+.text-danger-light {
+  color: @brand-danger-light;
+}
+.text-danger-dark {
+  color: @brand-danger-dark;
+}
+.text-inverse {
+  color: @brand-inverse;
+}
+.text-inverse-inverse {
+  color: @brand-inverse-light;
+}
+.text-inverse-inverse {
+  color: @brand-inverse-dark;
+}
+
+/* Buttons */
+.btn-none {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border: 0;
+    background: transparent;
+    outline: 0;
+    .box-shadow (none);
+    color: darken(@btn-default-color, 20%);
+  }
+  &:hover {
+    color: lighten(@btn-default-color, 20%);
+  }
+}
+.btn-trans {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border: 0;
+    background: rgba(0, 0, 0, 0.05);
+  }
+  &:hover {
+    color: lighten(@btn-default-color, 20%);
+  }
+}
+.btn-round {
+  border-radius: 20px;
+  padding: 3px 6px;
+}
+/* Header */
+.header {
+  .h3 {
+    font-weight: 200;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+  }
+}
+/* Sidebar */
+.sidebar,
+.aside {
+  background-color: @navbar-inverse-bg;
+
+  & > ul > li > a {
+    color: @body-bg;
+
+    &:hover {
+      background-color: lighten(@navbar-inverse-bg, 5%);
+    }
+  }
+
+  .nav-heading {
+    color: #FFF;
+  }
+
+  a {
+    color: @body-bg;
+  }
+  & > ul.tags > li > a {
+    color: @navbar-inverse-bg;
+  }
+}
+/* Media */
+.media-text {
+  color: lighten(@gray, 18%);
+}
+.media-heading {
+  font-weight: 500;
+}
+/* Event */
+.media-event {
+  border: 1px solid @gray-lighter;
+  background-color: lighten(@gray-lighter, 20%);
+}
+/* Textarea */
+.magic-box {
+  .box-shadow (none);
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+
+  &:focus,
+  &:active {
+    background-color: #fff;
+    .placeholder (lighten(@text-color, 20%));
+  }
+}

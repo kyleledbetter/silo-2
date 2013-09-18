@@ -1,0 +1,301 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('icomoon.eot');
+	src:url('icomoon.eot?#iefix') format('embedded-opentype'),
+		url('icomoon.woff') format('woff'),
+		url('icomoon.ttf') format('truetype'),
+		url('icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-cloud, .icon-star, .icon-sound, .icon-video, .icon-trash, .icon-user, .icon-search, .icon-settings, .icon-camera, .icon-tag, .icon-mail, .icon-phone, .icon-bubble, .icon-location, .icon-world, .icon-params, .icon-music, .icon-clip, .icon-fire, .icon-like, .icon-lock, .icon-key, .icon-bulb, .icon-display, .icon-eye, .icon-calendar, .icon-photo, .icon-data, .icon-megaphone, .icon-out, .icon-in, .icon-search-2, .icon-add, .icon-subtract, .icon-exclamation, .icon-question, .icon-close, .icon-forbid, .icon-twitter, .icon-facebook, .icon-tumblr-sign, .icon-instagram, .icon-google-plus, .icon-youtube, .icon-github, .icon-skype, .icon-dribbble, .icon-news, .icon-t-shirt, .icon-cup, .icon-stack, .icon-shop, .icon-alarm, .icon-play, .icon-stop, .icon-pause, .icon-forward, .icon-rewind, .icon-circle-arrow-down, .icon-circle-arrow-up, .icon-circle-arrow-right, .icon-circle-arrow-left, .icon-angle-left, .icon-angle-right, .icon-angle-up, .icon-angle-down, .icon-flag-alt, .icon-feed, .icon-share, .icon-reply, .icon-ok, .icon-bell, .icon-bullhorn, .icon-credit, .icon-banknote, .icon-reorder, .icon-sort {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-cloud:before {
+	content: "\e001";
+}
+.icon-star:before {
+	content: "\e002";
+}
+.icon-sound:before {
+	content: "\e003";
+}
+.icon-video:before {
+	content: "\e004";
+}
+.icon-trash:before {
+	content: "\e005";
+}
+.icon-user:before {
+	content: "\e006";
+}
+.icon-search:before {
+	content: "\e007";
+}
+.icon-settings:before {
+	content: "\e008";
+}
+.icon-camera:before {
+	content: "\e009";
+}
+.icon-tag:before {
+	content: "\e00a";
+}
+.icon-mail:before {
+	content: "\e00b";
+}
+.icon-phone:before {
+	content: "\e00c";
+}
+.icon-bubble:before {
+	content: "\e00d";
+}
+.icon-location:before {
+	content: "\e00e";
+}
+.icon-world:before {
+	content: "\e00f";
+}
+.icon-params:before {
+	content: "\e010";
+}
+.icon-music:before {
+	content: "\e011";
+}
+.icon-clip:before {
+	content: "\e012";
+}
+.icon-fire:before {
+	content: "\e013";
+}
+.icon-like:before {
+	content: "\e014";
+}
+.icon-lock:before {
+	content: "\e015";
+}
+.icon-key:before {
+	content: "\e016";
+}
+.icon-bulb:before {
+	content: "\e017";
+}
+.icon-display:before {
+	content: "\e018";
+}
+.icon-eye:before {
+	content: "\e019";
+}
+.icon-calendar:before {
+	content: "\e01a";
+}
+.icon-photo:before {
+	content: "\e01b";
+}
+.icon-data:before {
+	content: "\e01c";
+}
+.icon-megaphone:before {
+	content: "\e01d";
+}
+.icon-out:before {
+	content: "\e022";
+}
+.icon-in:before {
+	content: "\e023";
+}
+.icon-search-2:before {
+	content: "\e024";
+}
+.icon-add:before {
+	content: "\e025";
+}
+.icon-subtract:before {
+	content: "\e026";
+}
+.icon-exclamation:before {
+	content: "\e027";
+}
+.icon-question:before {
+	content: "\e028";
+}
+.icon-close:before {
+	content: "\e029";
+}
+.icon-forbid:before {
+	content: "\e02a";
+}
+.icon-twitter:before {
+	content: "\e000";
+}
+.icon-facebook:before {
+	content: "\e01e";
+}
+.icon-tumblr-sign:before {
+	content: "\f174";
+}
+.icon-instagram:before {
+	content: "\e01f";
+}
+.icon-google-plus:before {
+	content: "\f0d5";
+}
+.icon-youtube:before {
+	content: "\f167";
+}
+.icon-github:before {
+	content: "\f09b";
+}
+.icon-skype:before {
+	content: "\f17e";
+}
+.icon-dribbble:before {
+	content: "\f17d";
+}
+.icon-news:before {
+	content: "\e020";
+}
+.icon-t-shirt:before {
+	content: "\e021";
+}
+.icon-cup:before {
+	content: "\e02b";
+}
+.icon-stack:before {
+	content: "\e02c";
+}
+.icon-shop:before {
+	content: "\e02d";
+}
+.icon-alarm:before {
+	content: "\e02e";
+}
+.icon-play:before {
+	content: "\e02f";
+}
+.icon-stop:before {
+	content: "\e030";
+}
+.icon-pause:before {
+	content: "\e031";
+}
+.icon-forward:before {
+	content: "\e032";
+}
+.icon-rewind:before {
+	content: "\e033";
+}
+.icon-circle-arrow-down:before {
+	content: "\f0ab";
+}
+.icon-circle-arrow-up:before {
+	content: "\f0aa";
+}
+.icon-circle-arrow-right:before {
+	content: "\f0a9";
+}
+.icon-circle-arrow-left:before {
+	content: "\f0a8";
+}
+.icon-angle-left:before {
+	content: "\f104";
+}
+.icon-angle-right:before {
+	content: "\f105";
+}
+.icon-angle-up:before {
+	content: "\f106";
+}
+.icon-angle-down:before {
+	content: "\f107";
+}
+.icon-flag-alt:before {
+	content: "\f11d";
+}
+.icon-feed:before {
+	content: "\e034";
+}
+.icon-share:before {
+	content: "\e035";
+}
+.icon-reply:before {
+	content: "\e036";
+}
+.icon-ok:before {
+	content: "\f00c";
+}
+.icon-bell:before {
+	content: "\f0a2";
+}
+.icon-bullhorn:before {
+	content: "\f0a1";
+}
+.icon-credit:before {
+	content: "\f09d";
+}
+.icon-banknote:before {
+	content: "\e037";
+}
+.icon-reorder:before {
+	content: "\f0c9";
+}
+.icon-sort:before {
+	content: "\f0dc";
+}
+.icon-patrik-larsson-pakman:before {
+	content: "\e038";
+}
+.icon-aleks-dorohovich-triforce:before {
+	content: "\e039";
+}
+.icon-ilias-ismanalijev-batman:before {
+	content: "\e03a";
+}
+.icon-jeffrey-herrera-beer-mug:before {
+	content: "\e03b";
+}
+.icon-christina-pedersen-walkman:before {
+	content: "\e03c";
+}
+.icon-derek-mui-invader:before {
+	content: "\e03d";
+}
+.icon-matt-hakes-moustache:before {
+	content: "\e03e";
+}
+.icon-matt-hakes-spectacles:before {
+	content: "\e03f";
+}
+.icon-johana-barretto-kitty:before {
+	content: "\e040";
+}
+.icon-ian-yates-y-fronts:before {
+	content: "\e041";
+}

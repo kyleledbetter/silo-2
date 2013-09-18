@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Silo Chat by Kyle Ledbetter</title>
+	<link href="assets/css/application.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond/respond.min.js"></script>
+	<![endif]-->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+	<link href="assets/ico/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<script src="assets/js/modernizr.custom.js"></script>
+</head>
+<body class="no-touch">
+	<header class="header">
+		<a class="sidebar-toggle pull-left btn btn-sm btn-trans"><span aria-hidden="true" class="icon-reorder"></span></a>
+		<a class="aside-toggle pull-right btn btn-trans btn-sm"><span aria-hidden="true" class="icon-search"></span></a>
+		<div class="dropdown pull-right">
+			<a data-toggle="dropdown" class="btn btn-sm btn-danger btn-round" href="#"><span class="text-md">12</span></a>
+			<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+				<li><a href="#">Share Chat</a></li>
+				<li><a href="#">Close Chat</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Leave Chat</a></li>
+			</ul>
+		</div>
+		<div class="dropdown">
+			<a data-toggle="dropdown" href="#" class="h3"><img class="img-circle" src="assets/images/avatars/michael_128.jpg" width="20" alt="..."> <span class="user-name">Michael's Silos</span> <span aria-hidden="true" class="icon-angle-down text-sm"></span></a>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li><a href="#">Share Chat</a></li>
+				<li><a href="#">Close Chat</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Leave Chat</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- begin container -->
+	<div class="row">
+		<div class="col-sm-8">
+			<div id="panel-1" class="panel panel-default">
+				<div class="panel-heading">
+					<div class="dropdown pull-right">
+						<a data-toggle="dropdown" class="btn btn-none" href="#"><span aria-hidden="true" class="icon-angle-down text-xxl"></span></a>
+						<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+							<li><a href="#">Share Chat</a></li>
+							<li><a href="#">Close Chat</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Leave Chat</a></li>
+						</ul>
+					</div>
+					<div class="text-center">
+						<h3 class="panel-title">Banana Stand</h3>
+						<a href="#" class="text-muted">3 Members</a>
+					</div>
+				</div>
+				<div class="list-group">
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/lucille_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<div class="dropdown pull-right">
+									<a data-toggle="dropdown" class="btn btn-xs btn-none btn-details" href="#"><span aria-hidden="true" class="icon-angle-down"></span></a>
+									<ul class="dropdown-menu pull-right text-md" role="menu" aria-labelledby="dLabel">
+										<li><a href="#">Share Chat</a></li>
+										<li><a href="#">Close Chat</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Leave Chat</a></li>
+									</ul>
+								</div>
+								<a href="#" class="text-date">10:59 AM</a>
+								<a href="#" class="media-heading">Lucille Bluth</a>
+								<div class="media-text">
+									<input type="checkbox" checked />
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">task</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item active">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/michael_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">10:48 AM</a>
+								<a href="#" class="media-heading">Michael Bluth</a>
+								<div class="media-text">
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">HTML</a></li>
+									<li><a href="#" class="tag">CSS</a></li>
+									<li><a href="#" class="tag">JavaScript</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/buster_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">11:05 AM</a>
+								<a href="#" class="media-heading">Buster Bluth</a>
+								<div class="media-text">
+									<div class="event pull-left">
+										<span class="month">Aug</span>
+										<span class="day">11</span>
+										<span class="year">2013</span>
+									</div>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">event</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/gob_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">11:05 AM</a>
+								<a href="#" class="media-heading">Gob Bluth</a>
+								<div class="media-text">
+									<a href="#" class="file-type file-type-xls pull-left">
+										xls
+									</a>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">file</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/george-michael_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">12:33 PM</a>
+								<a href="#" class="media-heading">George-Michael Bluth</a>
+								<div class="media-text">
+									<ul class="list-unstyled list-tasks">
+										<li>
+											<input type="checkbox" checked />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" checked />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+									</ul>
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">task</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/lucille_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<div class="dropdown pull-right">
+									<a data-toggle="dropdown" class="btn btn-xs btn-none btn-details" href="#"><span aria-hidden="true" class="icon-angle-down"></span></a>
+									<ul class="dropdown-menu pull-right text-md" role="menu" aria-labelledby="dLabel">
+										<li><a href="#">Share Chat</a></li>
+										<li><a href="#">Close Chat</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Leave Chat</a></li>
+									</ul>
+								</div>
+								<a href="#" class="text-date">10:59 AM</a>
+								<a href="#" class="media-heading">Lucille Bluth</a>
+								<div class="media-text">
+									<input type="checkbox" checked />
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">task</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item active">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/michael_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">10:48 AM</a>
+								<a href="#" class="media-heading">Michael Bluth</a>
+								<div class="media-text">
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">HTML</a></li>
+									<li><a href="#" class="tag">CSS</a></li>
+									<li><a href="#" class="tag">JavaScript</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/buster_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">11:05 AM</a>
+								<a href="#" class="media-heading">Buster Bluth</a>
+								<div class="media-text">
+									<div class="event pull-left">
+										<span class="month">Sep</span>
+										<span class="day">21</span>
+										<span class="year">2013</span>
+									</div>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">event</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/george_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">11:05 AM</a>
+								<a href="#" class="media-heading">George Bluth</a>
+								<div class="media-text">
+									<a href="#" class="file-type file-type-ppt pull-left">
+										ppt
+									</a>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">file</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+				</div>
+				<textarea class="form-control magic-box" rows="5" placeholder="Enter chat, task, event, or drop file here. Use the @ sign for member names and # sign for tags"></textarea>
+				<div class="datepick"></div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div id="panel-2" class="panel panel-default">
+				<div class="panel-heading">
+					<div class="dropdown pull-right">
+						<a data-toggle="dropdown" class="btn btn-none" href="#"><span aria-hidden="true" class="icon-angle-down text-xxl"></span></a>
+						<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+							<li><a href="#">Share Chat</a></li>
+							<li><a href="#">Close Chat</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Leave Chat</a></li>
+						</ul>
+					</div>
+					<div class="text-center">
+						<h3 class="panel-title">No Touching</h3>
+						<a href="#" class="text-muted">8 Members</a>
+					</div>
+				</div>
+				<div class="list-group">
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/michael_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">10:48 AM</a>
+								<a href="#" class="media-heading">Michael Bluth</a>
+								<div class="media-text">
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">HTML</a></li>
+									<li><a href="#" class="tag">CSS</a></li>
+									<li><a href="#" class="tag">JavaScript</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/lucille_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">10:59 AM</a>
+								<a href="#" class="media-heading">Lucille Bluth</a>
+								<div class="media-text">
+									<input type="checkbox" checked />
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">task</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/buster_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">11:05 AM</a>
+								<a href="#" class="media-heading">Buster Bluth</a>
+								<div class="media-text">
+									<div class="event pull-left">
+										<span class="month">Aug</span>
+										<span class="day">11</span>
+										<span class="year">2013</span>
+									</div>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">event</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/gob_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">11:05 AM</a>
+								<a href="#" class="media-heading">Gob Bluth</a>
+								<div class="media-text">
+									<a href="#" class="file-type file-type-doc pull-left">
+										doc
+									</a>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">file</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/george-michael_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">12:33 PM</a>
+								<a href="#" class="media-heading">George-Michael Bluth</a>
+								<div class="media-text">
+									<ul class="list-unstyled list-tasks">
+										<li>
+											<input type="checkbox" checked />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" checked />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+									</ul>
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">task</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+				</div>
+				<textarea class="form-control magic-box" rows="5" placeholder="Enter chat, task, event, or drop file here. Use the @ sign for member names and # sign for tags"></textarea>
+				<div class="datepick"></div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div id="panel-3" class="panel panel-default">
+				<div class="panel-heading">
+					<div class="dropdown pull-right">
+						<a data-toggle="dropdown" class="btn btn-none" href="#"><span aria-hidden="true" class="icon-angle-down text-xxl"></span></a>
+						<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+							<li><a href="#">Share Chat</a></li>
+							<li><a href="#">Close Chat</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Leave Chat</a></li>
+						</ul>
+					</div>
+					<div class="text-center">
+						<h3 class="panel-title">Roofie Circle</h3>
+						<a href="#" class="text-muted">4 Members</a>
+					</div>
+				</div>
+				<div class="list-group">
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/michael_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">10:48 AM</a>
+								<a href="#" class="media-heading">Michael Bluth</a>
+								<div class="media-text">
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">HTML</a></li>
+									<li><a href="#" class="tag">CSS</a></li>
+									<li><a href="#" class="tag">JavaScript</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/lucille_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<div class="dropdown pull-right">
+									<a data-toggle="dropdown" class="btn btn-xs btn-none btn-details" href="#"><span aria-hidden="true" class="icon-angle-down"></span></a>
+									<ul class="dropdown-menu pull-right text-md" role="menu" aria-labelledby="dLabel">
+										<li><a href="#">Share Chat</a></li>
+										<li><a href="#">Close Chat</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Leave Chat</a></li>
+									</ul>
+								</div>
+								<a href="#" class="text-date">10:59 AM</a>
+								<a href="#" class="media-heading">Lucille Bluth</a>
+								<div class="media-text">
+									<input type="checkbox" checked />
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">task</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item active">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/michael_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">10:48 AM</a>
+								<a href="#" class="media-heading">Michael Bluth</a>
+								<div class="media-text">
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">HTML</a></li>
+									<li><a href="#" class="tag">CSS</a></li>
+									<li><a href="#" class="tag">JavaScript</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/buster_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">11:05 AM</a>
+								<a href="#" class="media-heading">Buster Bluth</a>
+								<div class="media-text">
+									<div class="event pull-left">
+										<span class="month">Aug</span>
+										<span class="day">11</span>
+										<span class="year">2013</span>
+									</div>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">event</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/gob_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">11:05 AM</a>
+								<a href="#" class="media-heading">Gob Bluth</a>
+								<div class="media-text">
+									<a href="#" class="file-type file-type-xls pull-left">
+										xls
+									</a>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">file</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/lucille_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">10:59 AM</a>
+								<a href="#" class="media-heading">Lucille Bluth</a>
+								<div class="media-text">
+									<input type="checkbox" checked />
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">task</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/buster_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">11:05 AM</a>
+								<a href="#" class="media-heading">Buster Bluth</a>
+								<div class="media-text">
+									<div class="event pull-left">
+										<span class="month">Aug</span>
+										<span class="day">11</span>
+										<span class="year">2013</span>
+									</div>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">event</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/gob_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">11:05 AM</a>
+								<a href="#" class="media-heading">Gob Bluth</a>
+								<div class="media-text">
+									<a href="#" class="file-type file-type-pdf pull-left">
+										pdf
+									</a>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">file</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/george-michael_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">12:33 PM</a>
+								<a href="#" class="media-heading">George-Michael Bluth</a>
+								<div class="media-text">
+									<ul class="list-unstyled list-tasks">
+										<li>
+											<input type="checkbox" checked />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" checked />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+									</ul>
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">task</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+				</div>
+				<textarea class="form-control magic-box" rows="5" placeholder="Enter chat, task, event, or drop file here. Use the @ sign for member names and # sign for tags"></textarea>
+				<div class="datepick"></div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div id="panel-4" class="panel panel-default">
+				<div class="panel-heading">
+					<div class="dropdown pull-right">
+						<a data-toggle="dropdown" class="btn btn-none" href="#"><span aria-hidden="true" class="icon-angle-down text-xxl"></span></a>
+						<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+							<li><a href="#">Share Chat</a></li>
+							<li><a href="#">Close Chat</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Leave Chat</a></li>
+						</ul>
+					</div>
+					<div class="text-center">
+						<h3 class="panel-title">Anustart</h3>
+						<a href="#" class="text-muted">3 Members</a>
+					</div>
+				</div>
+				<div class="list-group">
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/michael_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">10:48 AM</a>
+								<a href="#" class="media-heading">Michael Bluth</a>
+								<div class="media-text">
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">HTML</a></li>
+									<li><a href="#" class="tag">CSS</a></li>
+									<li><a href="#" class="tag">JavaScript</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/lucille_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">10:59 AM</a>
+								<a href="#" class="media-heading">Lucille Bluth</a>
+								<div class="media-text">
+									<input type="checkbox" checked />
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">task</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/buster_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">11:05 AM</a>
+								<a href="#" class="media-heading">Buster Bluth</a>
+								<div class="media-text">
+									<div class="event pull-left">
+										<span class="month">Aug</span>
+										<span class="day">11</span>
+										<span class="year">2013</span>
+									</div>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">event</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/gob_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">11:05 AM</a>
+								<a href="#" class="media-heading">Gob Bluth</a>
+								<div class="media-text">
+									<a href="#" class="file-type file-type-ppt pull-left">
+										ppt
+									</a>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">file</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/george-michael_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">12:33 PM</a>
+								<a href="#" class="media-heading">George-Michael Bluth</a>
+								<div class="media-text">
+									<ul class="list-unstyled list-tasks">
+										<li>
+											<input type="checkbox" checked />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" checked />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+									</ul>
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">task</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+				</div>
+				<textarea class="form-control magic-box" rows="5" placeholder="Enter chat, task, event, or drop file here. Use the @ sign for member names and # sign for tags"></textarea>
+				<div class="datepick"></div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div id="panel-5" class="panel panel-default">
+				<div class="panel-heading">
+					<div class="dropdown pull-right">
+						<a data-toggle="dropdown" class="btn btn-none" href="#"><span aria-hidden="true" class="icon-angle-down text-xxl"></span></a>
+						<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+							<li><a href="#">Share Chat</a></li>
+							<li><a href="#">Close Chat</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Leave Chat</a></li>
+						</ul>
+					</div>
+					<div class="text-center">
+						<h3 class="panel-title">Take To The Sea!</h3>
+						<a href="#" class="text-muted">5 Members</a>
+					</div>
+				</div>
+				<div class="list-group">
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/michael_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">10:48 AM</a>
+								<a href="#" class="media-heading">Michael Bluth</a>
+								<div class="media-text">
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">HTML</a></li>
+									<li><a href="#" class="tag">CSS</a></li>
+									<li><a href="#" class="tag">JavaScript</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/lucille_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">10:59 AM</a>
+								<a href="#" class="media-heading">Lucille Bluth</a>
+								<div class="media-text">
+									<input type="checkbox" checked />
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">task</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/buster_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">11:05 AM</a>
+								<a href="#" class="media-heading">Buster Bluth</a>
+								<div class="media-text">
+									<div class="event pull-left">
+										<span class="month">Aug</span>
+										<span class="day">11</span>
+										<span class="year">2013</span>
+									</div>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">event</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/gob_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">11:05 AM</a>
+								<a href="#" class="media-heading">Gob Bluth</a>
+								<div class="media-text">
+									<a href="#" class="file-type file-type-css pull-left">
+										css
+									</a>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">file</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img class="media-object" src="assets/images/avatars/george-michael_128.jpg" width="16" alt="...">
+							</a>
+							<div class="media-body">
+								<a href="#" class="text-date">12:33 PM</a>
+								<a href="#" class="media-heading">George-Michael Bluth</a>
+								<div class="media-text">
+									<ul class="list-unstyled list-tasks">
+										<li>
+											<input type="checkbox" checked />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" checked />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+										<li>
+											<input type="checkbox" />
+											Cras sit amet nibh libero, in gravida nulla.
+										</li>
+									</ul>
+								</div>
+								<ul class="tags">
+									<li><a href="#" class="tag">task</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+				</div>
+				<textarea class="form-control magic-box" rows="5" placeholder="Enter chat, task, event, or drop file here. Use the @ sign for member names and # sign for tags"></textarea>
+				<div class="datepick"></div>
+			</div>
+		</div>
+	</div>
+	<!-- end container -->
+
+	<!-- begin sidebar -->
+	<div class="sidebar">
+		<div class="navbar navbar-inverse">
+			<a class="sidebar-toggle pull-right btn btn-none btn-lg"><span aria-hidden="true" class="icon-angle-left"></span></a>
+			<a class="navbar-brand" href="#">silo</a>
+		</div>
+
+		<ul class="nav nav-stacked">
+			<li class="nav-heading">Chats</li>
+			<li><a href="#panel-1"><img class="img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="16"> Banana Stand</a></li>
+			<li><a href="#panel-2"><img class="img-circle" src="assets/images/avatars/george_128.jpg" alt="..." width="16"> No Touching</a></li>
+			<li><a href="#panel-3"><img class="img-circle" src="assets/images/avatars/gob_128.jpg" alt="..." width="16"> Roofie Circle</a></li>
+			<li><a href="#panel-4"><img class="img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="16"> Anustart</a></li>
+			<li><a href="#panel-5"><img class="img-circle" src="assets/images/avatars/barry_128.jpg" alt="..." width="16">Take To The Sea!</a></li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+
+	<!-- begin aside -->
+	<div class="aside">
+		<div class="navbar navbar-inverse">
+			<a class="aside-toggle pull-left btn btn-none btn-lg"><span aria-hidden="true" class="icon-angle-right"></span></a>
+			<form class="aside-form pull-right" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control input-small" placeholder="Search">
+				</div>
+			</form>
+		</div>
+		<ul class="nav nav-stacked">
+			<li class="nav-heading">Tags</li>
+		</ul>
+		<ul class="tags">
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">task</a></li>
+		</ul>
+	</div>
+	<!-- end aside -->
+	<!-- begin modal -->
+	<div class="modal fade modal-chat-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="28">
+						</a>
+						<div class="media-body">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4>Tobias Funke</h4>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body">
+					<h5 class="text-large">Well, Michael, you really are quite the Cupid, aren’t you? I tell you, you can sink your arrow into my buttocks any time.</h5>
+					<div class="text-muted">12:48 PM - 9/09/2013</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end modal -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<link href="assets/icheck/square/grey.css" rel="stylesheet">
+	<script src="assets/js/jquery.icheck.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('input[type=checkbox], input[type=radio]').iCheck({
+			checkboxClass: 'icheckbox_square-grey',
+			radioClass: 'iradio_square-grey',
+			increaseArea: '20%' // optional
+		});
+	});
+	</script>
+	<script>
+		$(window).load(function() {
+			$(".panel > .list-group").animate({ scrollTop: $('.list-group')[0].scrollHeight}, 1000);
+		});
+	</script>
+	<script src="assets/js/jquery.smooth-scroll.min.js"></script>
+	<script>
+		// Smooth scroll to horizontal anchor
+		$(document).ready(function() {
+			$('.sidebar li a').click(function(event) {
+				event.preventDefault();
+				var link = this;
+				$.smoothScroll({
+				scrollTarget: link.hash,
+				direction: 'left'
+				});
+			});
+			return false;
+		});
+	</script>
+	<script>
+
+		$(function(){
+			// sidebar Toggle
+			$(".sidebar-toggle").click(function(){
+				$(".sidebar").toggleClass("active");
+				return false;
+			});
+			$('.sidebar').bind('clickoutside', function (event) {
+				$(".sidebar").removeClass("active");
+			});
+			// aside Toggle
+			$(".aside-toggle").click(function(){
+				$(".aside").toggleClass("active");
+				return false;
+			});
+			$('.aside').bind('clickoutside', function (event) {
+				$(".aside").removeClass("active");
+			});
+		});
+	</script>
+	<script src="assets/js/jquery.caretposition.js"></script>
+	<script src="assets/js/jquery.sew.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var values = [{val:'kyleledbetter', meta:'Kyle Ledbetter'},
+						  {val:'jlledblanc', meta:'Joe LeBlanc'},
+						  {val:'mbluth', meta:'Michael Bluth'},
+						  {val:'gob_franklin', meta:'Gob Bluth'}];
+
+			var customItemTemplate = "<div><span />&nbsp;<small /></div>";
+
+			function elementFactory(element, e) {
+				var template = $(customItemTemplate).find('span')
+														.text('@' + e.val).end()
+											   		.find('small')
+														.text("(" + e.meta + ")").end();
+				element.append(template);
+			};
+
+			// here is how we use it
+			$('textarea').sew({values: values, elementFactory: elementFactory});
+		});
+	</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://addyosmani.github.io/jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.3.custom.css">
+	<style type='text/css'>
+	.datepick {
+		display: none;
+	}
+	</style>
+
+
+
+	<script type='text/javascript'>//<![CDATA[
+		$(window).load(function(){
+			$('textarea').keyup(function(){
+
+			txt = $(this);
+
+			if( txt.val().indexOf('date') >= 0 )
+				{
+					$('.datepick').datepicker({
+						onSelect: function(theDate) {
+						txt.val(txt.val().replace('date', theDate));
+						$(this).hide();
+					}
+					}).show();
+				}
+			});
+		});//]]>
+	</script>
+</body>
+</html>
