@@ -7365,11 +7365,14 @@ body > .row > [class^="col-"] {
 .header .dropdown {
   display: inline-block;
 }
-.header .dropdown-menu {
+.header .dropdown-user .dropdown-menu {
   width: 100%;
 }
 .header .btn-danger {
   margin-right: 10px;
+}
+.header .dropdown-menu.pull-right {
+  text-align: left;
 }
 /* Sidebar Toggle */
 .fixed-sidebar-toggle {
