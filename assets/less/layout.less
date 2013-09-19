@@ -211,6 +211,14 @@ body > .row > [class^="col-"] {
 /* Media */
 .media-text {
 	margin-top: 5px;
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	.thumbnail {
+		margin-bottom: 10px;
+	}
 }
 /* Event */
 .media-event {
@@ -220,7 +228,21 @@ body > .row > [class^="col-"] {
 .media-object {
 	margin-top: 1px;
 }
+/* Thumbnails */
+.thumbnail-embed {
+	overflow: hidden;
+	max-height: 150px;
 
+	img {
+		width: 100%;
+		position: relative;
+		top: -20px;
+	}
+}
+/* Pre */
+pre.prettyprint {
+	margin-bottom: 0;
+}
 @media (max-width: @screen-tablet) {
 	body {
 		padding-bottom: 0;

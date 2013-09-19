@@ -73,7 +73,7 @@
   &:focus,
   &:active {
     border: 0;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.15);
   }
   &:hover {
     color: lighten(@btn-default-color, 20%);
@@ -85,6 +85,9 @@
 }
 /* Header */
 .header {
+  a {
+    color: @brand-toupe;
+  }
   .h3 {
     font-weight: 200;
   }
@@ -100,7 +103,7 @@
   background-color: @navbar-inverse-bg;
 
   & > ul > li > a {
-    color: @body-bg;
+    color: @brand-toupe;
 
     &:hover {
       background-color: lighten(@navbar-inverse-bg, 5%);
@@ -112,10 +115,10 @@
   }
 
   a {
-    color: @body-bg;
+    color: @brand-toupe;
   }
   & > ul.tags > li > a {
-    color: @navbar-inverse-bg;
+    color: @brand-toupe;
   }
 }
 /* Media */
@@ -141,5 +144,11 @@
   &:active {
     background-color: #fff;
     .placeholder (lighten(@text-color, 20%));
+  }
+}
+/* Thumbnail */
+.thumbnail {
+  a {
+    color: @brand-toupe;
   }
 }
