@@ -66,3 +66,19 @@ padding: 0;
 .tag:hover::after {
 	border-left-color: @gray;
 }
+
+/* Tags in Aside */
+.aside {
+	.tag {
+		&::before,
+		&::after {
+			background: @navbar-inverse-bg;
+		}
+		&:hover {
+			color: white;
+		}
+		&:hover::after {
+			border-left-color: darken(@gray, 3%);
+		}
+	}
+}

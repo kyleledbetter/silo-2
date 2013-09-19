@@ -6778,6 +6778,17 @@ input[type="text"].select2-input {
 .tag:hover::after {
   border-left-color: #63625d;
 }
+/* Tags in Aside */
+.aside .tag::before,
+.aside .tag::after {
+  background: #4b4a47;
+}
+.aside .tag:hover {
+  color: white;
+}
+.aside .tag:hover::after {
+  border-left-color: #5b5a55;
+}
 .event {
   background: #fff;
   border: 1px solid #c8c7c4;
