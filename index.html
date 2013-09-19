@@ -444,7 +444,7 @@
 				<div class="datepick-2"></div>
 			</div>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-6 col-md-4">
 			<div id="panel-3" class="panel panel-default">
 				<div class="panel-heading">
 					<div class="dropdown pull-right">
@@ -686,7 +686,7 @@
 				<div class="datepick-3"></div>
 			</div>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-6 col-md-4">
 			<div id="panel-4" class="panel panel-default">
 				<div class="panel-heading">
 					<div class="dropdown pull-right">
@@ -832,7 +832,7 @@
 				<div class="datepick-4"></div>
 			</div>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-6 col-md-4">
 			<div id="panel-5" class="panel panel-default">
 				<div class="panel-heading">
 					<div class="dropdown pull-right">
@@ -1204,23 +1204,5 @@
 			});
 		});//]]>
 	</script>
-	<script>
-	  $("body > .row").sortable({
-	      placeholder: 'body > .row > .col-sm-4',
-	      helper: 'clone',
-	      appendTo: 'body',
-	      forcePlaceholderSize: true,
-	      start: function(event, ui) {
-	          $('body > .row > .col-sm-4:visible:first').addClass('real-first-child');
-	      },
-	      stop: function(event, ui) {
-	          $('body > .row > .col-sm-4.real-first-child').removeClass('real-first-child');
-	      },
-	      change: function(event, ui) {
-	          $('body > .row > .col-sm-4.real-first-child').removeClass('real-first-child');
-	          $('body > .row > .col-sm-4:visible:first').addClass('real-first-child');
-	      },
-	  });
-	  </script>
 </body>
 </html>
