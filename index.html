@@ -295,7 +295,7 @@
 					<!-- end item -->
 				</div>
 				<textarea class="form-control magic-box" rows="5" placeholder="Enter chat, task, event, or drop file here. Use the @ sign for member names and # sign for tags"></textarea>
-				<div class="datepick"></div>
+				<div class="datepick-1"></div>
 			</div>
 		</div>
 		<div class="col-sm-4">
@@ -441,7 +441,7 @@
 					<!-- end item -->
 				</div>
 				<textarea class="form-control magic-box" rows="5" placeholder="Enter chat, task, event, or drop file here. Use the @ sign for member names and # sign for tags"></textarea>
-				<div class="datepick"></div>
+				<div class="datepick-2"></div>
 			</div>
 		</div>
 		<div class="col-sm-4">
@@ -683,7 +683,7 @@
 					<!-- end item -->
 				</div>
 				<textarea class="form-control magic-box" rows="5" placeholder="Enter chat, task, event, or drop file here. Use the @ sign for member names and # sign for tags"></textarea>
-				<div class="datepick"></div>
+				<div class="datepick-3"></div>
 			</div>
 		</div>
 		<div class="col-sm-4">
@@ -829,7 +829,7 @@
 					<!-- end item -->
 				</div>
 				<textarea class="form-control magic-box" rows="5" placeholder="Enter chat, task, event, or drop file here. Use the @ sign for member names and # sign for tags"></textarea>
-				<div class="datepick"></div>
+				<div class="datepick-4"></div>
 			</div>
 		</div>
 		<div class="col-sm-4">
@@ -975,7 +975,7 @@
 					<!-- end item -->
 				</div>
 				<textarea class="form-control magic-box" rows="5" placeholder="Enter chat, task, event, or drop file here. Use the @ sign for member names and # sign for tags"></textarea>
-				<div class="datepick"></div>
+				<div class="datepick-5"></div>
 			</div>
 		</div>
 	</div>
@@ -1014,20 +1014,20 @@
 		</ul>
 		<ul class="tags">
 			<li><a href="#" class="tag">task</a></li>
-			<li><a href="#" class="tag">task</a></li>
-			<li><a href="#" class="tag">task</a></li>
-			<li><a href="#" class="tag">task</a></li>
-			<li><a href="#" class="tag">task</a></li>
-			<li><a href="#" class="tag">task</a></li>
-			<li><a href="#" class="tag">task</a></li>
-			<li><a href="#" class="tag">task</a></li>
-			<li><a href="#" class="tag">task</a></li>
-			<li><a href="#" class="tag">task</a></li>
-			<li><a href="#" class="tag">task</a></li>
-			<li><a href="#" class="tag">task</a></li>
-			<li><a href="#" class="tag">task</a></li>
-			<li><a href="#" class="tag">task</a></li>
-			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">file</a></li>
+			<li><a href="#" class="tag">event</a></li>
+			<li><a href="#" class="tag">reminder</a></li>
+			<li><a href="#" class="tag">html</a></li>
+			<li><a href="#" class="tag">css</a></li>
+			<li><a href="#" class="tag">javascript</a></li>
+			<li><a href="#" class="tag">angular</a></li>
+			<li><a href="#" class="tag">jade</a></li>
+			<li><a href="#" class="tag">node</a></li>
+			<li><a href="#" class="tag">express</a></li>
+			<li><a href="#" class="tag">ruby</a></li>
+			<li><a href="#" class="tag">rails</a></li>
+			<li><a href="#" class="tag">product</a></li>
+			<li><a href="#" class="tag">ux</a></li>
 		</ul>
 	</div>
 	<!-- end aside -->
@@ -1130,7 +1130,27 @@
 			// here is how we use it
 			$('textarea').sew({values: values, elementFactory: elementFactory});
 		});
+		$(document).ready(function() {
+			var values = [{val:'task', meta:'Kyle Ledbetter'},
+						  {val:'file', meta:'Joe LeBlanc'},
+						  {val:'event', meta:'Michael Bluth'},
+						  {val:'reminder', meta:'Gob Bluth'}];
+
+			var customItemTemplate = "<div><span />&nbsp;<small /></div>";
+
+			function elementFactory(element, e) {
+				var template = $(customItemTemplate).find('span')
+														.text('#' + e.val).end()
+											   		.find('small')
+														.text("(" + e.meta + ")").end();
+				element.append(template);
+			};
+
+			// here is how we use it
+			$('textarea').sew({token: '#', values: values, elementFactory: elementFactory});
+		});
 	</script>
+
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
 	<link rel="stylesheet" type="text/css" href="http://addyosmani.github.io/jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.3.custom.css">
 	<style type='text/css'>
@@ -1138,18 +1158,43 @@
 		display: none;
 	}
 	</style>
-
-
-
 	<script type='text/javascript'>//<![CDATA[
 		$(window).load(function(){
-			$('textarea').keyup(function(){
+			$('#panel-1 textarea').keyup(function(){
 
 			txt = $(this);
 
 			if( txt.val().indexOf('date') >= 0 )
 				{
-					$('.datepick').datepicker({
+					$('.datepick-1').datepicker({
+						onSelect: function(theDate) {
+						txt.val(txt.val().replace('date', theDate));
+						$(this).hide();
+					}
+					}).show();
+				}
+			});
+			$('#panel-2 textarea').keyup(function(){
+
+			txt = $(this);
+
+			if( txt.val().indexOf('date') >= 0 )
+				{
+					$('.datepick-2').datepicker({
+						onSelect: function(theDate) {
+						txt.val(txt.val().replace('date', theDate));
+						$(this).hide();
+					}
+					}).show();
+				}
+			});
+			$('#panel-3 textarea').keyup(function(){
+
+			txt = $(this);
+
+			if( txt.val().indexOf('date') >= 0 )
+				{
+					$('.datepick-3').datepicker({
 						onSelect: function(theDate) {
 						txt.val(txt.val().replace('date', theDate));
 						$(this).hide();
@@ -1159,5 +1204,23 @@
 			});
 		});//]]>
 	</script>
+	<script>
+	  $("body > .row").sortable({
+	      placeholder: 'body > .row > .col-sm-4',
+	      helper: 'clone',
+	      appendTo: 'body',
+	      forcePlaceholderSize: true,
+	      start: function(event, ui) {
+	          $('body > .row > .col-sm-4:visible:first').addClass('real-first-child');
+	      },
+	      stop: function(event, ui) {
+	          $('body > .row > .col-sm-4.real-first-child').removeClass('real-first-child');
+	      },
+	      change: function(event, ui) {
+	          $('body > .row > .col-sm-4.real-first-child').removeClass('real-first-child');
+	          $('body > .row > .col-sm-4:visible:first').addClass('real-first-child');
+	      },
+	  });
+	  </script>
 </body>
 </html>
